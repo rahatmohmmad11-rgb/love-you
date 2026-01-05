@@ -131,3 +131,18 @@
   </script>
 </body>
 </html>
+<audio id="bg-music" loop>
+  <source src="mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("bg-music");
+
+  document.addEventListener("click", () => {
+    music.play();
+  }, { once: true });
+
+  document.addEventListener("touchstart", () => {
+    music.play();
+  }, { once: true });
+</script>
